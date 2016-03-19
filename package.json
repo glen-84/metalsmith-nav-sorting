@@ -1,0 +1,14 @@
+{
+  "name": "metalsmith-nav-sorting",
+  "author": "Glen",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "handlebars": "4.0.5",
+    "highlight.js": "9.2.0",
+    "metalsmith": "2.1.0",
+    "metalsmith-layouts": "1.6.4",
+    "metalsmith-markdown-remarkable": "0.1.1",
+    "metalsmith-navigation": "0.2.6"
+  }
+}

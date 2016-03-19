@@ -1,0 +1,17 @@
+{{#each items}}
+<li class="{{#ifx this.path "===" @root.nav_path}}active{{/ifx}}">
+    {{#if this.file}}
+    <a href="/docs/{{this.path}}">
+        {{this.title}} ({{this.name}})
+    </a>
+    {{else}}
+    <span class="menu-text">{{this.title}}</span>
+    {{/if}}
+
+    {{#if children}}
+    <ul class="nested vertical menu">
+        {{> nav-items items=children}}
+    </ul>
+    {{/if}}
+</li>
+{{/each}}
